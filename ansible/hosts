@@ -1,0 +1,6 @@
+[servers]
+nshcloudlabs ansible_host=18.183.64.103 ansible_port=2022
+
+[servers:vars]
+ansible_python_interpreter=/usr/bin/python3
+
