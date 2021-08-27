@@ -7,8 +7,8 @@ BMI Infra, Configuration, and App Deployment
 
 AWS Configure access id and key
 
-cd terraform/infra/
-terraform init
-terraform plan
-terraform apply
+cd terraform/infra/  
+terraform init  
+terraform plan  
+terraform apply  
 
