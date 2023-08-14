@@ -7,7 +7,7 @@ resource "aws_instance" "nshcloudlabs-webapp1" {
   instance_type               = "t2.micro"
   subnet_id                   = aws_subnet.subnet_public.id
   vpc_security_group_ids      = [aws_security_group.nshcloudlabs-public-security.id]
-  associate_public_ip_address = true
+  associate_public_ip_address = false
   user_data                   = data.template_file.user_data.rendered
 
   tags = {
