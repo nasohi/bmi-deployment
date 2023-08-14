@@ -9,6 +9,7 @@ resource "aws_instance" "nshcloudlabs-webapp1" {
   vpc_security_group_ids      = [aws_security_group.nshcloudlabs-public-security.id]
   associate_public_ip_address = false
   user_data                   = data.template_file.user_data.rendered
+  monitoring                  = true
 
   tags = {
     Name = "nshcloudlabs-webapp1"
